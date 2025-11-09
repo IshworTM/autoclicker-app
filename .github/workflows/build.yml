@@ -1,0 +1,28 @@
+name: Build Otoklikor
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - name: Install Dependencies
+        run: |
+          pip install pyinstaller PyQt6 pynput
+      - name: Build
+        run: |
+          pyinstaller --onefile --windowed app_gui.py
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: Otoklikor-${{ matrix.os }}
+          path: dist/
