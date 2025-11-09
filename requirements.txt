@@ -1,0 +1,7 @@
+evdev==1.9.2
+pynput==1.8.1
+PyQt6==6.10.0
+PyQt6-Qt6==6.10.0
+PyQt6_sip==13.10.2
+python-xlib==0.33
+six==1.17.0
