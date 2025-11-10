@@ -29,7 +29,7 @@ Perfect for testing, gaming, or any repetitive clicking task.
 
 **Otoklikor Demo**
 
-![Full Demo](https://github.com/user-attachments/assets/3c73b2b0-faa4-483f-82d8-9d5f1ba078a9)
+https://github.com/user-attachments/assets/32a69cca-1670-478e-b7d1-67d5106edd0b
 
 ---
 
