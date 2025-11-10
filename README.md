@@ -29,7 +29,7 @@ Perfect for testing, gaming, or any repetitive clicking task.
 
 **Otoklikor Demo**
 
-![Full Demo](https://github.com/IshworTM/autoclicker-app/blob/main/assets/Otoklikor_demo.mp4)
+![Full Demo](https://github.com/user-attachments/assets/32a69cca-1670-478e-b7d1-67d5106edd0b)
 
 ---
 
