@@ -18,14 +18,18 @@ Perfect for testing, gaming, or any repetitive clicking task.
 ---
 
 ## 🧩 Demo
+
 **First Look**
+
 ![First Look](assets/first_look.png)
 
 **App Running**
+
 ![App Running](assets/app_running.png)
 
 **Otoklikor Demo**
-![Full Demo](assets/Otoklikor_demo.mp4)
+
+![Full Demo](https://github.com/IshworTM/autoclicker-app/blob/main/assets/Otoklikor_demo.mp4)
 
 ---
 
