@@ -49,6 +49,9 @@ def start_clicking() -> tp.NoReturn:
             str,
             "⚠️ Error: Invalid interval value, enter a positive non-zero number.",
         )
+        invoke_gui_in_another_thread(
+            status_text, "setStyleSheet", str, "color: #FFA000; font-weight: bold;"
+        )
         update_buttons()
 
 
