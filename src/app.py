@@ -1,5 +1,3 @@
-from pynput.mouse import Button, Controller
-from pynput import keyboard as kb
 import typing as tp
 import time
 import threading
@@ -7,10 +5,15 @@ import sys
 from PyQt6 import QtCore as qtc, QtWidgets as qtw, QtGui as qtg
 
 AlignFlag = qtc.Qt.AlignmentFlag
-
-mouse = Controller()
 flag = False
 alt_pressed = False
+
+
+def get_pynput():
+    from pynput.mouse import Button, Controller
+    from pynput import keyboard as kb
+
+    return Button, Controller, kb
 
 
 def start_clicking() -> tp.NoReturn:
@@ -82,7 +85,7 @@ def update_buttons() -> tp.NoReturn:
         stop_button.setEnabled(False)
 
 
-def on_press(key: kb.Key) -> tp.NoReturn:
+def on_press(key) -> tp.NoReturn:
     global alt_pressed
     if key == kb.Key.alt_l:
         alt_pressed = True
@@ -93,7 +96,7 @@ def on_press(key: kb.Key) -> tp.NoReturn:
         pass
 
 
-def on_release(key: kb.Key) -> tp.NoReturn:
+def on_release(key) -> tp.NoReturn:
     global alt_pressed
     if key == kb.Key.alt_l:
         alt_pressed = False
@@ -101,6 +104,10 @@ def on_release(key: kb.Key) -> tp.NoReturn:
 
 if __name__ == "__main__":
     app = qtw.QApplication(sys.argv)
+
+    Button, Controller, kb = get_pynput()
+    mouse = Controller()
+
     window = qtw.QWidget()
     window.setWindowTitle("⚡ Otoklikor")
     window.setFixedSize(720, 480)
