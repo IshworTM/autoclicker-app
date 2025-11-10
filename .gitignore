@@ -3,6 +3,7 @@ test/
 build/
 dist/
 app_gui.spec
+app.spec
 
 # Virtual Environments
 venv-pewpew-app/
