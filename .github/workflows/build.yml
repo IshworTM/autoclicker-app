@@ -20,7 +20,7 @@ jobs:
           pip install pyinstaller PyQt6 pynput
       - name: Build
         run: |
-          pyinstaller --onefile --windowed app.py
+          pyinstaller --onefile --windowed ./src/app.py
       - name: Upload binary
         uses: actions/upload-artifact@v4
         with:
